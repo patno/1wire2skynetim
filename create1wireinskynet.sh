@@ -20,5 +20,5 @@ for dev in ${ONEWIRE}/1* ; do
 
 	args="uuid=${family}.${id}&devicetype=${devtype}&function=${function}"
 
-	curl -X POST -d \"${args}\" ${SKYNET}
+	curl -X POST -d "${args}" ${SKYNET}
 done
